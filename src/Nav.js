@@ -7,21 +7,25 @@ const Nav = ({current}) => {
     return(
         <div>
             <Menu selectedKeys = {[current]} mode = "horizontal">
+            
                 <Menu.Item key='home'>
                     <Link to={`/`}>
                         <HomeOutlined />Home
                     </Link>
                 </Menu.Item>
+
                 <Menu.Item key='profile'>
                     <Link to={`/profile`}>
                         <ProfileOutlined />Profile
                     </Link>
                 </Menu.Item>
+
                 <Menu.Item key='protected'>
                     <Link to={`/protected`}>
                         <FileProtectOutline />Protected
                     </Link>
                 </Menu.Item>
+
             </Menu>
         </div>
     )
